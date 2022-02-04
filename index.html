@@ -1,0 +1,77 @@
+<html>
+<body>
+<script>
+    //key values
+     const myrmc ={
+         "name":"gurusankar",
+         "age":22,
+         "salary":10000,
+
+     }
+   
+    const vechicles={
+        "car":"bmw",
+        "bike":"honda",
+        "bus":"mtc",
+    }
+
+const city={
+    "pondy":"beach",
+    "chennai":"t.nagar",
+    "mumbai":"pune",
+
+}
+document.write (myrmc.name +" "+ myrmc.age+" " + myrmc.salary +"<br/>");
+document.write (vechicles.car+" "+vechicles.bike+" "+vechicles.bus +"<br/>");
+ document.write(city.pondy+" "+city.chennai+" "+city.mumbai+"<br/>");
+
+
+ // new object
+var emp=new Object();
+emp.name="kavitha";
+emp.age=25;
+emp.salary=15000;
+
+var time=new Object();
+time.am=10;
+time.pm=11;
+
+var company=new Object();
+company.info=100000;
+company.tcs=50000;
+company.cts=750000
+
+document.write(emp.name+" "+emp.age+" "+emp.salary+"<br/>");
+document.write(time.am+" "+time.pm+"<br/>");
+document.write(company.info+" "+company.tcs+" "+company.cts+"<br/>");
+
+
+//constructor
+function app(name,age,salary){
+this.name=name;
+this.age=age;
+this.salary=salary;
+}
+ file=new app("linga",21,10000);
+
+ function movie (guru,kavi,linga){
+this.guru=guru;
+this.kavi=kavi;
+this.linga=linga;
+ }
+e=new movie("guru","kavi","linga")
+
+function fruit (apple,orange,mango){
+this.apple=apple;
+this.orange=orange;
+this.mango=mango;
+}
+a= new fruit (10,15,30)
+ 
+
+document.write(file.name+" "+file.age+" "+file.salary+"<br/>");
+document.write(e.guru+""+e.kavitha+" "+e.linga+"<br/>");
+document.write(a.apple+" "+a.orange+" "+a.mango+"<br/>");
+</script>    
+</body>
+</html>
